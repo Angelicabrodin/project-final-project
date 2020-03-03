@@ -1,0 +1,10 @@
+.meditation-container {
+    display:flex;
+    justify-content:center;
+}
+
+p {
+    font-family: 'Amatic SC';
+    color:darkgray;
+    font-size: 35px;
+}
