@@ -1,0 +1,26 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.button-signout {
+    padding: 5px;
+    margin: 6px;
+    border-radius: 5px;
+    background-color: white;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    border: 0.5px solid darkgray;
+    width: 100px;
+}
+  
+h2 {
+    color: darkgray;
+    font-family: 'Amatic SC';
+}
+  
+p {
+    color: darkgray;
+    font-family: 'Amatic SC';
+}

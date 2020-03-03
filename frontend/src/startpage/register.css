@@ -1,0 +1,38 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:10px
+}
+
+.register-input {
+    border: 0.5px solid darkgray;
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    margin: 7px;
+    padding: 3px;
+}
+
+.submit-button {
+    border: 0.5px solid darkgray;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 5px;
+    background-color: white;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    width: 70px;
+}
+  
+h2 {
+    color: darkgray;
+    font-family: 'Amatic SC';
+    font-size: 35px;
+    margin: 10px 0 10px;
+  }
