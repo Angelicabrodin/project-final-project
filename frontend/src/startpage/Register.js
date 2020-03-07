@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './register.css'
+import './css/register.css'
 
 const URL = 'https://project-yoga.herokuapp.com/register'
 

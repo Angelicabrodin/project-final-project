@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { StartPage } from './startpage/StartPage'
 import { Nav } from './components/Nav'
@@ -8,19 +8,18 @@ import { Yoga } from './components/Yoga'
 import { Meditation } from 'components/Meditation'
 import { Footer } from 'components/Footer'
 
+// My test for the happythoughts-list
+import { Happy } from 'components/Happy'
+
+
 import './app.css'
 
 export const App = () => {
   return (
     <BrowserRouter>
       <main className="home-container">
-        {/* // I have done this in order to see how the different components will look like, cuz I cant manage to show them when the Nav
-    component is within the switch..  */}
         <Nav />
         <Switch>
-          {/* <PublicRoute restricted={false} component={Home} path="/" exact />
-          <PublicRoute restricted={true} component={SignIn} path="/signin" exact />
-          <PrivateRoute component={Dashboard} path="/dashboard" exact /> */}
           <Route path="/" exact>
             <StartPage />
           </Route>
@@ -32,6 +31,9 @@ export const App = () => {
           </Route>
           <Route path="/meditation" exact>
             <Meditation />
+          </Route>
+          <Route path="/happylist" exact>
+            <Happy />
           </Route>
         </Switch>
         <Footer />

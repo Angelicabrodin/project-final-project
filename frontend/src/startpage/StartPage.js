@@ -4,7 +4,7 @@ import { Login } from 'startpage/Login'
 import lotus from './lotusblack.png'
 import { Link } from 'react-router-dom'
 
-import './startpage.css'
+import './css/startpage.css'
 
 export const StartPage = () => {
     const [showRegisterForm, setShowRegisterForm] = useState(false)

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Profile } from './Profile'
-import './login.css'
+import './css/login.css'
 
 export const Login = () => {
     const [email, setEmail] = useState('')

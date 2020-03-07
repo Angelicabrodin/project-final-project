@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import './nav.css'
+import './css/nav.css'
 import lotus from 'startpage/lotusblack.png'
 
 export const Nav = () => {
@@ -21,10 +21,13 @@ export const Nav = () => {
                         <NavLink to="/home">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Yoga">Yoga</NavLink>
+                        <NavLink to="/yoga">Yoga</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Meditation">Meditation</NavLink>
+                        <NavLink to="/meditation">Meditation</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/happylist">Happy List</NavLink>
                     </li>
                     <li>
                         <Link to="/">Logout</Link>

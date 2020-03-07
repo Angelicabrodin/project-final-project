@@ -1,12 +1,11 @@
 import React from 'react'
-// import styled from 'styled-components/macro'
 
-import './css/meditation.css'
+import './css/happy.css'
 
-export const Meditation = () => {
+export const Happy = () => {
     return (
-        <div className="meditation-container">
-            <div className="meditation-list">
+        <div className="happy-container">
+            <div className="happy-list">
                 <ul>
                     <li>bla bla bla</li>
                     <li>bla bla bla</li>

@@ -1,7 +1,7 @@
 import React from 'react'
 // import styled from 'styled-components/macro'
 
-import './yoga.css'
+import './css/yoga.css'
 
 export const Yoga = () => {
     return (

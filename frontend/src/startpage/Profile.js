@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './profile.css'
+import './css/profile.css'
 
 export const Profile = ({ userLoggedIn, onClick, user }) => {
 

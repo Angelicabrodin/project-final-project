@@ -1,0 +1,17 @@
+.happy-list-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height:auto;
+    width:auto;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width:80%;
+    border-radius:30px;
+    margin:0 10px 0;
+}
