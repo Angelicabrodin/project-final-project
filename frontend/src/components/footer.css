@@ -1,6 +1,10 @@
+.footer-container {
+    background:#f6f2df;
+}
+
 p {
     font-family: 'Amatic SC';
-    color:darkgray;
+    color:#3f4b41;
     font-size: 25px;
     margin: 10px 0;
 }

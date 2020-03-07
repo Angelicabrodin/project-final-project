@@ -6,7 +6,15 @@ import './meditation.css'
 export const Meditation = () => {
     return (
         <div className="meditation-container">
-            <p>Meditation!</p>
+            <div className="meditation-list">
+                <ul>
+                    <li>bla bla bla</li>
+                    <li>bla bla bla</li>
+                    <li>bla bla bla</li>
+                    <li>bla bla bla</li>
+                    <li>bla bla bla</li>
+                </ul>
+            </div>
         </div>
     )
 }
