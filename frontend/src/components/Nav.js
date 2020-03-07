@@ -18,7 +18,7 @@ export const Nav = () => {
             <container className="links-container">
                 <ul className="nav-links">
                     <li>
-                        <NavLink to="/welcome">Welcome</NavLink>
+                        <NavLink to="/home">Home</NavLink>
                     </li>
                     <li>
                         <NavLink to="/Yoga">Yoga</NavLink>
@@ -27,7 +27,7 @@ export const Nav = () => {
                         <NavLink to="/Meditation">Meditation</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Logout</NavLink>
+                        <Link to="/">Logout</Link>
                     </li>
                 </ul>
             </container>

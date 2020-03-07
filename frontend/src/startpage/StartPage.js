@@ -28,7 +28,7 @@ export const StartPage = () => {
             {showLoginForm && <Login />}
             {!showRegisterForm && <button type='button' className='start-button' onClick={onRegister}>Register</button>}
             {!showLoginForm && <button type='button' className='start-button' onClick={onLogin}>Login</button>}
-            <Link to="/welcome">Welcome</Link>
+            <Link to="/home">Welcome</Link>
         </div>
     )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 // import styled from 'styled-components/macro'
 
-import './welcome.css'
+import './home.css'
 
-export const Welcome = () => {
+export const Home = () => {
     return (
-        <div className="welcome-container">
+        <div className="home-container">
             <p>Welcome!</p>
         </div>
 
