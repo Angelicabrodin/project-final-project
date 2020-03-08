@@ -15,14 +15,14 @@ export const AddThoughtForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <label>
-                To buy:
+                <h5 className="happy-h5">My Happy Thoughts:</h5>
                 <input className="add-thought"
                     type="text"
                     value={name}
                     onChange={(event) => setName(event.target.value)} />
             </label>
 
-            <button className="submit-button" type="submit">Add Item</button>
+            <button className="submit-button" type="submit">Add Thought</button>
         </form>
     )
 } 

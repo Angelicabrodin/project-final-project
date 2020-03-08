@@ -24,6 +24,11 @@
       background:#3f4b41;
       border-radius:5px;
   }
+
+  .burger-img {
+      width:60px;
+      height:auto;
+  }
   
   .links-container {
       display:flex;

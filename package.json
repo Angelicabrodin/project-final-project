@@ -5,6 +5,7 @@
         "postinstall": "npm install --prefix backend"
     },
     "dependencies": {
+        "react-focus-lock": "^2.2.1",
         "redux": "^4.0.5"
     }
 }

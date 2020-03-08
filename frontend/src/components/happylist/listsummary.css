@@ -5,6 +5,8 @@
     flex-direction: column;
     width: auto;
     margin:10px;
+    font-family: 'Amatic SC';
+    color:#3f4b41;
 }
 
 h4 {
@@ -12,6 +14,7 @@ h4 {
     width:auto;
     margin: 10px 10px 0 10px;
     font-size: 20px;
+    font-weight:100;
 }
 
 h2{
@@ -19,6 +22,9 @@ h2{
     width:auto;
     margin:10px;
     font-size:23px;
+    color:#3f4b41;
+    font-family: 'Amatic SC';
+    font-weight:100;
 }
 
 ol {

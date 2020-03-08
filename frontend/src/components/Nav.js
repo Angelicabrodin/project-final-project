@@ -1,12 +1,39 @@
-import React from 'react'
+
+// Burger experiment:
+import React, { useState, useRef } from 'react'
+import { useOnClickOutside } from './navbar/Hooks'
+import { Burger } from './navbar/Burger'
+import { Menu } from './navbar/Menu'
+import FocusLock from 'react-focus-lock'
+
+// import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+
+// import { Burger } from './navbar/Burger'
 
 import './css/nav.css'
 import lotus from 'startpage/lotusblack.png'
 
+// import burger from 'components/burger.png'
+
 export const Nav = () => {
+    const [open, setOpen] = useState(false);
+    const node = useRef();
+    const menuId = "main-menu";
+
+    useOnClickOutside(node, () => setOpen(false));
+
     return (
         <container className="nav-container">
+
+            {/* // Burger experiment */}
+            {/* <div ref={node}>
+                <FocusLock disabled={!open}>
+                    <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+                    <Menu open={open} setOpen={setOpen} id={menuId} />
+                </FocusLock>
+            </div> */}
+
             <div className="burger-container">
                 <div className="burger"></div>
                 <div className="burger"></div>
@@ -29,9 +56,9 @@ export const Nav = () => {
                     <li>
                         <NavLink to="/happylist">Happy List</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to="/list">Happy</NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/">Logout</Link>
                     </li>

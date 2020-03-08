@@ -6,7 +6,7 @@ import { Nav } from './components/Nav'
 import { Home } from './components/Home'
 import { Yoga } from './components/Yoga'
 import { Meditation } from './components/Meditation'
-import { Happy } from './components/Happy'
+// import { Happy } from './components/Happy'
 import { Footer } from './components/Footer'
 
 // My test for the happythoughts-list
@@ -34,12 +34,12 @@ export const App = () => {
           <Route path="/meditation" exact>
             <Meditation />
           </Route>
-          <Route path="/list" exact>
+          <Route path="/happylist" exact>
             <HappyList />
           </Route>
-          <Route path="/happylist" exact>
+          {/* <Route path="/happylist" exact>
             <Happy />
-          </Route>
+          </Route> */}
         </Switch>
         <Footer />
       </main>

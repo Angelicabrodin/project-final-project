@@ -12,10 +12,10 @@ export const ListSummary = () => {
 
     return (
         <section className="list-summary">
-            <h4>I have {items.length} items in my fridge</h4>
-            <h2>I need to buy more of {addMoreThoughts.length} item
+            <h4>I have {items.length} Happy Thoughts</h4>
+            <h2>I need to think about {addMoreThoughts.length} Happy Thoughts
                 {addMoreThoughts.length === 1 ? "." : "s."}
-                <span className="list-icon" onClick={() => setShowList(!showList)}> 🛍 </span>
+                <span className="list-icon" onClick={() => setShowList(!showList)}>🌸</span>
             </h2>
 
             {showList && (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { list } from 'components/happylist/reducers/list'
-import './addtolist.css'
+import './addthoughttolist.css'
 
 export const AddThoughtToList = (props) => {
     const dispatch = useDispatch()
@@ -18,7 +18,7 @@ export const AddThoughtToList = (props) => {
         <li>
             {props.item.name}
             <label className="add-more-label">
-                Buy More!
+                Remember!
                 <input
                     type="checkbox"
                     checked={props.item.needsMore}
@@ -28,7 +28,7 @@ export const AddThoughtToList = (props) => {
             <button className="remove-button"
                 type="button"
                 onClick={handleRemoveButtonClick}>
-                Remove!
+                Acchieved!
             </button>
         </li>
     )

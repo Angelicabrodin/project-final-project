@@ -1,29 +1,38 @@
 form {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     margin: 10px;
-    font-weight:bold;
     font-size:20px;
+    width:auto;
+    font-family: 'Amatic SC';
+    color:#3f4b41;
 }
 
 .add-thought {
-    border: 1px solid yellow;
+    border: 0.5px solid #3f4b41;
     margin-left: 5px;
     font-family: 'Amatic SC';
     font-size:20px;
+    color:#3f4b41;
+}
+
+.happy-h5 {
+    margin: 0px;
+    display: inline-block;
+    font-size:25px;
+    color:#3f4b41;
+    font-family: 'Amatic SC';
+    font-weight: 100;
+    color:#3f4b41;
 }
 
 .submit-button {
     margin-left:5px;
-    border:1px solid black;
-    background-color:white;
+    border:0.5px solid #3f4b41;
+    background-color:#f6f2df;
     border-radius:16px;
     font-family: 'Amatic SC';
-    font-weight: bold;
-    font-weight:20px;
-    /* cursor: grab; */
+    font-size:15px;
+    cursor: pointer;
 }
-
-/* .submitButton:hover {
-    cursor:grab;
-} */
