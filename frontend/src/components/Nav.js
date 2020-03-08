@@ -30,6 +30,9 @@ export const Nav = () => {
                         <NavLink to="/happylist">Happy List</NavLink>
                     </li>
                     <li>
+                        <NavLink to="/list">Happy</NavLink>
+                    </li>
+                    <li>
                         <Link to="/">Logout</Link>
                     </li>
                 </ul>

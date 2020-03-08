@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
-import { list } from '/reducers/list'
+import { list } from 'components/happylist/reducers/list'
 import './listsummary.css'
 
 

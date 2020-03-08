@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
-import { list } from '/reducers/list'
+import { list } from 'components/happylist/reducers/list'
 
 import { AddThoughtForm } from 'components/happylist/AddThoughtForm'
 import { ThoughtsList } from 'components/happylist/ThoughtsList'

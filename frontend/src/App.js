@@ -5,11 +5,13 @@ import { StartPage } from './startpage/StartPage'
 import { Nav } from './components/Nav'
 import { Home } from './components/Home'
 import { Yoga } from './components/Yoga'
-import { Meditation } from 'components/Meditation'
-import { Footer } from 'components/Footer'
+import { Meditation } from './components/Meditation'
+import { Happy } from './components/Happy'
+import { Footer } from './components/Footer'
 
 // My test for the happythoughts-list
-import { Happy } from 'components/Happy'
+import { HappyList } from './components/happylist/HappyList'
+
 
 
 import './app.css'
@@ -31,6 +33,9 @@ export const App = () => {
           </Route>
           <Route path="/meditation" exact>
             <Meditation />
+          </Route>
+          <Route path="/list" exact>
+            <HappyList />
           </Route>
           <Route path="/happylist" exact>
             <Happy />

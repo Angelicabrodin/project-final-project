@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { list } from '/reducers/list'
+import { list } from 'components/happylist/reducers/list'
 import './clearbutton.css'
 
 export const ClearButton = () => {
