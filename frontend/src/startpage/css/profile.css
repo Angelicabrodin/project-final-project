@@ -24,3 +24,15 @@ p {
     color: darkgray;
     font-family: 'Amatic SC';
 }
+
+/** MEDIA QUERIES **/
+
+/** TABLETS **/
+
+@media (min-width: 665px) {
+}
+/** DESKTOP **/
+    
+@media (min-width: 1024px){
+        
+}

@@ -17,7 +17,7 @@ import './app.css'
 export const App = () => {
   return (
     <BrowserRouter>
-      <main className="home-container">
+      <main className="first-container">
         <Nav />
         <Switch>
           <Route path="/" exact>

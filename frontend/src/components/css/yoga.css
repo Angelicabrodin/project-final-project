@@ -1,7 +1,7 @@
 .yoga-container {
     display:flex;
     justify-content: center;
-    background-image:url(yogahands.jpg);
+    background-image:url(yogahands.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
@@ -12,5 +12,17 @@
     justify-content: center;
     width:50%;
     color: #3f4b41;
+}
+
+/** MEDIA QUERIES **/
+
+/** TABLETS **/
+
+@media (min-width: 665px) {
+}
+/** DESKTOP **/
+    
+@media (min-width: 1024px){
+        
 }
 

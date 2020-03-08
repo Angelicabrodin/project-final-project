@@ -1,5 +1,4 @@
 import React from 'react'
-// import styled from 'styled-components/macro'
 
 import './css/yoga.css'
 
@@ -8,7 +7,7 @@ export const Yoga = () => {
         <div className="yoga-container">
             <div className="yoga-list">
                 <ul>
-                    <li>bla bla bla</li>
+                    <li><a href={'https://yogobe.com/se/register/account'}>Yogobe</a></li>
                     <li>bla bla bla</li>
                     <li>bla bla bla</li>
                     <li>bla bla bla</li>
