@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
 import { PrivateRoute } from './PrivateRoute'
-import { PublicRoute } from './PublicRoute'
+// import { PublicRoute } from './PublicRoute'
 
 import { list } from 'reducers/list'
 import { users } from 'reducers/users'
@@ -19,8 +19,8 @@ import { HappyList } from './components/happylist/HappyList'
 import './app.css'
 
 const reducer = combineReducers({
-  list: list.reducer
-  // users: users.reducer
+  list: list.reducer,
+  users: users.reducer
 
 })
 
@@ -33,7 +33,9 @@ export const App = () => {
         <main className="first-container">
           <Nav />
           <Switch>
-            <PublicRoute restricted={false} component={StartPage} path="/" exact />
+            <Route path='/' exact>
+              <StartPage />
+            </Route>
             <PrivateRoute component={Home} path="/home" exact />
             <PrivateRoute component={Yoga} path="/yoga" exact />
             <PrivateRoute component={Meditation} path="/meditation" exact />
