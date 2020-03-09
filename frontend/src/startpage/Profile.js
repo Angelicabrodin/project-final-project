@@ -5,7 +5,9 @@ import './css/profile.css'
 
 export const Profile = ({ onClick }) => {
     const accessToken = window.localStorage.getItem('accessToken')
-    const [userName, setUserName] = useState('user') // userName är default user
+    // userName är default user
+    const [userName, setUserName] = useState('userName')
+
     useEffect(() => {
         const fetchUserData = () => {
             const URL = 'https://project-yoga.herokuapp.com/user'
@@ -27,7 +29,7 @@ export const Profile = ({ onClick }) => {
             <NavLink to="/home">Welcome to our community</NavLink>
             <button type='button' className='button-signout' onClick={onClick}>
                 Log out
-      </button>
+            </button>
         </section>
     )
 }

@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
 import { PrivateRoute } from './PrivateRoute'
-// import { PublicRoute } from './PublicRoute'
 
 import { list } from 'reducers/list'
 import { users } from 'reducers/users'

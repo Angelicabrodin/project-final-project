@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
-import { Profile } from './Profile'
-import './css/login.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { users } from 'reducers/users'
+
+import { Profile } from './Profile'
+import './css/login.css'
+
 export const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
     const URL = 'https://project-yoga.herokuapp.com/login'
-    const loggedIn = useSelector(store => store.users.loggedIn) // här får vi global state loggedIn från Redux. är true eller false.
+    // här får vi global state loggedIn från Redux. är true eller false.
+    const loggedIn = useSelector(store => store.users.loggedIn)
     const dispatch = useDispatch()
+
     const fetchProfile = async () => {
         const response = await fetch(URL, {
             method: 'POST',
@@ -26,11 +30,13 @@ export const Login = () => {
             setPassword('')
             if (data.notFound) {
                 setErrorMessage('Username or password is invalid')
-                dispatch(users.actions.setLoggedIn(false)) // Här kallar vi på action i reducern för att sätta global state till false.
+                // Här kallar vi på action i reducern för att sätta global state till false.
+                dispatch(users.actions.setLoggedIn(false))
             } else {
                 window.localStorage.setItem('accessToken', data.accessToken)
                 setErrorMessage('')
-                dispatch(users.actions.setLoggedIn(true)) // Här kallar vi på action i reducern för att sätta global state till true.
+                // Här kallar vi på action i reducern för att sätta global state till true.
+                dispatch(users.actions.setLoggedIn(true))
             }
         })
     }
@@ -42,7 +48,8 @@ export const Login = () => {
     return (
         <>
             {loggedIn && (
-                <Profile onClick={logOut} /> // Profile component är den som visas när du är inloggad.
+                // Profile component är den som visas när du är inloggad.
+                <Profile onClick={logOut} />
             )}
             {errorMessage && <p>{errorMessage}</p>}
             {!loggedIn && (
@@ -73,7 +80,7 @@ export const Login = () => {
                         </label>
                         <button className='login-button' type='submit'>
                             Login
-            </button>
+                        </button>
                     </form>
                 </>
             )}
