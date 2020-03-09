@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { list } from 'reducers/list'
-import './addthoughtform.css'
+import './happycss/addthoughtform.css'
 
 export const AddThoughtForm = () => {
     const [name, setName] = useState('')

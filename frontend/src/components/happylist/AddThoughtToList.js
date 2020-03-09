@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { list } from 'reducers/list'
-import './addthoughttolist.css'
+import './happycss/addthoughttolist.css'
 
 export const AddThoughtToList = (props) => {
     const dispatch = useDispatch()

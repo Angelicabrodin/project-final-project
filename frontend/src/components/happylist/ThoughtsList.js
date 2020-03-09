@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { AddThoughtToList } from 'components/happylist/AddThoughtToList'
-import './thoughtslist.css'
+import './happycss/thoughtslist.css'
 
 export const ThoughtsList = () => {
     const items = useSelector((state) => state.list.items)

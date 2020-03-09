@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
+
+import { PrivateRoute } from './PrivateRoute'
+import { PublicRoute } from './PublicRoute'
 
 import { list } from 'reducers/list'
 import { users } from 'reducers/users'
@@ -30,21 +33,11 @@ export const App = () => {
         <main className="first-container">
           <Nav />
           <Switch>
-            <Route path="/" exact>
-              <StartPage />
-            </Route>
-            <Route path="/home" exact>
-              <Home />
-            </Route>
-            <Route path="/yoga" exact>
-              <Yoga />
-            </Route>
-            <Route path="/meditation" exact>
-              <Meditation />
-            </Route>
-            <Route path="/happylist" exact>
-              <HappyList />
-            </Route>
+            <PublicRoute restricted={false} component={StartPage} path="/" exact />
+            <PrivateRoute component={Home} path="/home" exact />
+            <PrivateRoute component={Yoga} path="/yoga" exact />
+            <PrivateRoute component={Meditation} path="/meditation" exact />
+            <PrivateRoute component={HappyList} path="/happylist" exact />
           </Switch>
           <Footer />
         </main>

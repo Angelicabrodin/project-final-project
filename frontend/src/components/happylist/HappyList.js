@@ -9,7 +9,7 @@ import { AddThoughtForm } from 'components/happylist/AddThoughtForm'
 import { ThoughtsList } from 'components/happylist/ThoughtsList'
 import { ClearButton } from 'components/happylist/ClearButton'
 import { ListSummary } from 'components/happylist/ListSummary'
-import './happylist.css'
+import './happycss/happylist.css'
 
 
 // Redux is now in App.js
