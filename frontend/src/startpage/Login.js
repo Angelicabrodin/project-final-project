@@ -31,10 +31,12 @@ export const Login = () => {
             setPassword('')
 
             if (data.notFound) {
+                // här ska vi sätta globalstate till false i users reducern
                 setErrorMessage('Username or password is invalid')
                 setLoggedIn(false)
             } else {
                 // Where does setItem come from??
+                // här ska vi sätta user reducer till true i users reducern
                 window.localStorage.setItem('accessToken', data.accessToken)
                 setErrorMessage('')
                 setLoggedIn(true)

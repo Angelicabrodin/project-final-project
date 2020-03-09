@@ -13,8 +13,6 @@ export const list = createSlice({
     initialState,
     reducers: {
         addItem: (state, action) => {
-            // console.log('current state', state)
-            // console.log('action', action)
             state.items.push({ id: Date.now(), name: action.payload })
         },
         removeItem: (state, action) => {
