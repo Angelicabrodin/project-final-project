@@ -2,17 +2,14 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import lotus from 'startpage/lotusblack.png'
 import './css/nav.css'
+// import HamburgerMenu from '/navbar/HamburgerMenu'
 
 
 export const Nav = () => {
 
     return (
         <container className="nav-container">
-            <div className="burger-container">
-                <div className="burger"></div>
-                <div className="burger"></div>
-                <div className="burger"></div>
-            </div>
+            {/* <HamburgerMenu /> */}
             <div className="nav-wrapper">
                 <img className="nav-img" src={lotus} alt="Lotus" />
             </div>

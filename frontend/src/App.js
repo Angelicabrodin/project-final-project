@@ -9,7 +9,7 @@ import { list } from 'reducers/list'
 import { users } from 'reducers/users'
 
 import { StartPage } from './startpage/StartPage'
-import { Nav } from './components/Nav'
+import { Navbar } from './components/Navbar'
 import { Home } from './components/Home'
 import { Yoga } from './components/Yoga'
 import { Meditation } from './components/Meditation'
@@ -30,7 +30,7 @@ export const App = () => {
     <Provider store={store}>
       <BrowserRouter>
         <main className="first-container">
-          <Nav />
+          <Navbar />
           <Switch>
             <Route path='/' exact>
               <StartPage />
