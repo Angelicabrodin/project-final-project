@@ -4,7 +4,7 @@ import HamburgerMenu from 'react-hamburger-menu'
 import lotus from 'startpage/lotusblack.png'
 // import './css/nav2.css'
 
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 // const ImgWrapper = styled.div`
 //   display:flex;

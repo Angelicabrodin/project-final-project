@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import img from 'components/assets/mindfulness.jpeg'
 
 const MedContainer = styled.div`

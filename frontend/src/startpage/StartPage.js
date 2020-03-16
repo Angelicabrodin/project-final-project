@@ -4,7 +4,7 @@ import { Login } from 'startpage/Login'
 import lotus from './lotusblack.png'
 import { Link } from 'react-router-dom'
 
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 const StartContainer = styled.div`
     display: flex;

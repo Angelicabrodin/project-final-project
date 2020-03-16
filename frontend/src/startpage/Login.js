@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { users } from 'reducers/users'
 
 import { Profile } from './Profile'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 const SigninForm = styled.form`
     display: flex;
