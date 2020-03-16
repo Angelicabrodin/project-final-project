@@ -1,21 +1,36 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
+import lotus from 'startpage/lotusblack.png'
 // import './css/nav2.css'
 
 import styled from 'styled-components'
+
+// const ImgWrapper = styled.div`
+//   display:flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   padding: 5px;
+//   height: 30px;
+//   width: 30px;
+//   border: 0.5px solid darkgray;
+// `
+// const Flower = styled.img`
+//   width:80%
+// `
 
 const NavWrapper = styled.section`
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: ${props => (props.active ? '100%' : '8%')};
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: ${props => (props.active ? '100%' : '7%')};
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
   padding: 10px;
-  background: ${props => (props.active ? 'rgba(0, 0, 0, 0.8)' : '#f6f2df')};  
+  background: ${props => (props.active ? 'rgba(0, 0, 0, 0.8)' : 'none')};  
   @media (min-width: 668px) {
     position: relative;
     background: #f6f2df;
@@ -29,7 +44,7 @@ const BurgerWrapper = styled.div`
   width: 46px;
   height: 42px;
   &:focus {
-    outline-color: none;
+    outline-color: pink;
     outline-offset: 3px;
   }
   @media (min-width: 668px) {
@@ -56,7 +71,7 @@ const NavButton = styled.button`
   font-family: 'Amatic SC';
   letter-spacing: 1.5px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   color: #3f4b41;
   height: 40px;
   border: none;
@@ -107,7 +122,9 @@ export const Navbar = () => {
       </BurgerWrapper>
 
       <NavLinks active={active === true}>
-
+        {/* <ImgWrapper>
+        <Flower src={lotus} alt="Lotus" />
+      </ImgWrapper> */}
         <Link to={'/home'}>
           <NavButton>Home</NavButton>
         </Link>

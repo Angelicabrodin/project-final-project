@@ -3,7 +3,51 @@ import { useSelector, useDispatch } from 'react-redux'
 import { users } from 'reducers/users'
 
 import { Profile } from './Profile'
-import './css/login.css'
+import styled from 'styled-components'
+
+const SigninForm = styled.form`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+`
+
+const Input = styled.input`
+    border: 0.5px solid darkgray;
+    border-radius: 5px;
+    /* background-color: #f6f2df; */
+    width: 200px;
+    height: 35px;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    margin:7px;
+    padding:3px;
+`
+
+const SigninButton = styled.button`
+    border: 0.5px solid darkgray;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 5px;
+    background-color: white;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    width:70px;
+    height:35px;
+`
+const Headline = styled.h2`
+    color: darkgray;
+    font-family: 'Amatic SC';
+    font-size: 35px;
+    margin:10px 0 10px;
+`
+const ErrorText = styled.p`
+    color: darkgray;
+    font-family: 'Amatic SC';
+    font-size:20px;
+`
 
 export const Login = () => {
     const [email, setEmail] = useState('')
@@ -51,15 +95,14 @@ export const Login = () => {
                 // Profile component är den som visas när du är inloggad.
                 <Profile onClick={logOut} />
             )}
-            {errorMessage && <p>{errorMessage}</p>}
+            {errorMessage && <ErrorText>{errorMessage}</ErrorText>}
             {!loggedIn && (
                 <>
-                    <form className='login-form' onSubmit={handleSubmit}>
-                        <h2>Login</h2>
+                    <SigninForm onSubmit={handleSubmit}>
+                        <Headline>Sign in</Headline>
                         <label>
-                            <input
+                            <Input
                                 type='email'
-                                className='login-input'
                                 placeholder='Email'
                                 value={email}
                                 onChange={event => {
@@ -68,20 +111,19 @@ export const Login = () => {
                             />
                         </label>
                         <label>
-                            <input
+                            <Input
                                 type='password'
                                 placeholder='Password'
-                                className='login-input'
                                 value={password}
                                 onChange={event => {
                                     setPassword(event.target.value)
                                 }}
                             />
                         </label>
-                        <button className='login-button' type='submit'>
-                            Login
-                        </button>
-                    </form>
+                        <SigninButton type='submit'>
+                            Sign in
+                        </SigninButton>
+                    </SigninForm>
                 </>
             )}
         </>

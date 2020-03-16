@@ -1,5 +1,49 @@
 import React, { useState } from 'react'
-import './css/register.css'
+import styled from 'styled-components'
+
+const RegisterForm = styled.form`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:10px
+`
+
+const Input = styled.input`
+    border: 0.5px solid darkgray;
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    margin: 7px;
+    padding: 3px;
+`
+
+const SubmitButton = styled.button`
+    border: 0.5px solid darkgray;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 5px;
+    background-color: white;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    width: 70px;
+    height:35px;
+`
+
+const Headline = styled.h2`
+    color: darkgray;
+    font-family: 'Amatic SC';
+    font-size: 35px;
+    margin: 10px 0 10px;
+`
+
+const SubmitText = styled.p`
+
+`
 
 const URL = 'https://project-yoga.herokuapp.com/register'
 
@@ -27,20 +71,30 @@ export const Register = (props) => {
 
     return (
         <>
-            <form className='register-container' onSubmit={handleSubmit}>
-                <h2>Register</h2>
+            <RegisterForm onSubmit={handleSubmit}>
+                <Headline>Register</Headline>
                 <label>
-                    <input required className='register-input' type='text' placeholder='Name' value={name} onChange={(event) => { setName(event.target.value) }} />
+                    <Input required
+                        type='text'
+                        placeholder='Name'
+                        value={name}
+                        onChange={(event) => { setName(event.target.value) }} />
                 </label>
                 <label>
-                    <input required className='register-input' type='email' placeholder='Email' value={email} onChange={(event) => { setEmail(event.target.value) }} />
+                    <Input required
+                        type='email'
+                        placeholder='Email'
+                        value={email} onChange={(event) => { setEmail(event.target.value) }} />
                 </label>
                 <label>
-                    <input required className='register-input' type='password' placeholder='Password' value={password} onChange={(event) => { setPassword(event.target.value) }} />
+                    <Input required
+                        type='password'
+                        placeholder='Password'
+                        value={password} onChange={(event) => { setPassword(event.target.value) }} />
                 </label>
-                <button type='submit' className='submit-button'>Submit</button>
-            </form>
-            {registerUser && <p>Namaste for registering to our Yoga community 🙏 </p>}
+                <SubmitButton type='submit'>Submit</SubmitButton>
+            </RegisterForm>
+            {registerUser && <SubmitText>Namaste for registering to our Yoga community 🙏 </SubmitText>}
         </>
     )
 }

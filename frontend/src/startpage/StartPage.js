@@ -4,7 +4,46 @@ import { Login } from 'startpage/Login'
 import lotus from './lotusblack.png'
 import { Link } from 'react-router-dom'
 
-import './css/startpage.css'
+import styled from 'styled-components'
+
+const StartContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-center:center;
+    flex-direction: column;
+    margin: 70px 25px 25px 25px;
+    height: 80vh;
+`
+const StartButton = styled.div`
+    border-radius: 5px;
+    justify-content:center;
+    align-items:center;
+    padding: 1px 7px 2px;
+    background-color: white;
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    height: 30px;
+    width: 120px;
+    margin: 15px;
+    border:0.5px solid darkgray;
+`
+
+const Wrapper = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+    padding:10px;
+    height:150px;
+    width:150px;
+    border:1px solid darkgray;
+`
+
+const Logo = styled.img`
+    width:80%;
+`
+
 
 export const StartPage = () => {
     const [showRegisterForm, setShowRegisterForm] = useState(false)
@@ -20,14 +59,14 @@ export const StartPage = () => {
         setShowLoginForm(true)
     }
     return (
-        <div className='start-container'>
-            <div className="wrapper-img">
-                <img className="logo-img" src={lotus} alt="Lotus" />
-            </div>
+        <StartContainer>
+            <Wrapper>
+                <Logo src={lotus} alt="Lotus" />
+            </Wrapper>
             {showRegisterForm && !showLoginForm && <Register />}
             {showLoginForm && <Login />}
-            {!showRegisterForm && <button type='button' className='start-button' onClick={onRegister}>Register</button>}
-            {!showLoginForm && <button type='button' className='start-button' onClick={onLogin}>Login</button>}
-        </div>
+            {!showRegisterForm && <StartButton type='button' onClick={onRegister}>Register</StartButton>}
+            {!showLoginForm && <StartButton type='button' onClick={onLogin}>Login</StartButton>}
+        </StartContainer>
     )
 }

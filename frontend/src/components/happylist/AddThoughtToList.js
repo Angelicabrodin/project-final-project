@@ -1,7 +1,23 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { list } from 'reducers/list'
-import './happycss/addthoughttolist.css'
+import styled from 'styled-components/macro'
+
+const AddMore = styled.label`
+    margin-left:5px;
+    font-size:15px;
+    color:#3f4b41;
+`
+
+const Remove = styled.button`
+    margin-left: 10px;
+    border: 0.5px solid  #3f4b41;
+    background-color: #f6f2df;
+    border-radius: 16px;
+    font-family: 'Amatic SC';
+    font-size:15px;
+    color:#3f4b41;
+`
 
 export const AddThoughtToList = (props) => {
     const dispatch = useDispatch()
@@ -17,19 +33,19 @@ export const AddThoughtToList = (props) => {
     return (
         <li>
             {props.item.name}
-            <label className="add-more-label">
+            <AddMore>
                 Remember!
                 <input
                     type="checkbox"
                     checked={props.item.needsMore}
                     onChange={handleCheckBoxClick} />
-            </label>
+            </AddMore>
 
-            <button className="remove-button"
+            <Remove
                 type="button"
                 onClick={handleRemoveButtonClick}>
                 Acchieved!
-            </button>
+            </Remove>
         </li>
     )
 }

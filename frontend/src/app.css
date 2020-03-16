@@ -1,18 +1,5 @@
-.first-container {
-    display:flex;
-    flex-direction:column;
-    width:100%
-}
-
-/** MEDIA QUERIES **/
-
-/** TABLETS **/
-
-@media (min-width: 665px) {
-}
-
-/** DESKTOP **/
-  
-@media (min-width: 1024px){
-      
+.start-container {
+  display:flex;
+  flex-direction:column;
+  width:100%
 }

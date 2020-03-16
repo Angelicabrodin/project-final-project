@@ -1,20 +1,43 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import img from 'components/assets/mindfulness.jpeg'
 
-import './css/meditation.css'
+const MedContainer = styled.div`
+    display:flex;
+    justify-content: center;
+    background-image:url(${img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+`
+
+const MedList = styled.div`
+    margin-top:100px;
+    justify-content: center;
+    width:50%;
+    color: #3f4b41;
+`
+const StyledLink = styled.a`
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+`
 
 export const Meditation = () => {
     return (
-        <div className="meditation-container">
-            <div className="meditation-list">
+        <MedContainer>
+            <MedList>
+                <h2>Free Meditation sites</h2>
+                <h5>Feel free to browse the pages of free Meditation sites</h5>
                 <ul>
-                    <li><a href={'https://yogobe.com/se/register/account'}>Yogobe</a></li>
-                    <li>bla bla bla</li>
-                    <li>bla bla bla</li>
-                    <li>bla bla bla</li>
-                    <li>bla bla bla</li>
+                    <li><StyledLink href={'https://yogobe.com/se/register/account'}>Yogobe</StyledLink></li>
+                    <li><StyledLink href={'https://yogobe.com/se/register/account'}>Yogobe</StyledLink></li>
+                    <li><StyledLink href={'https://yogobe.com/se/register/account'}>Yogobe</StyledLink></li>
+                    <li><StyledLink href={'https://yogobe.com/se/register/account'}>Yogobe</StyledLink></li>
+                    <li><StyledLink href={'https://yogobe.com/se/register/account'}>Yogobe</StyledLink></li>
                 </ul>
-            </div>
-        </div>
+            </MedList>
+        </MedContainer>
     )
 }

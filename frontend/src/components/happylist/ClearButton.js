@@ -1,16 +1,29 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { list } from 'reducers/list'
-import './happycss/clearbutton.css'
+import styled from 'styled-components/macro'
+
+const StartOver = styled.button`
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #3f4b41;
+    background-color: #f6f2df;
+    border-radius: 16px;
+    font-family: 'Amatic SC';
+    color: #3f4b41;
+    width: 30%;
+    font-size: 20px;
+`
 
 export const ClearButton = () => {
     const dispatch = useDispatch()
 
     return (
-        <button
-            className="clear-button"
+        <StartOver
             type="button" onClick={() => dispatch(list.actions.removeAll())}>
             Clear All!
-        </button>
+        </StartOver>
     )
 }

@@ -1,35 +1,42 @@
 import React from 'react'
 
-// Redux is now in App.js
-// import { Provider } from 'react-redux'
-// import { combineReducers, configureStore } from '@reduxjs/toolkit'
-// import { list } from 'reducers/list'
-
 import { AddThoughtForm } from 'components/happylist/AddThoughtForm'
 import { ThoughtsList } from 'components/happylist/ThoughtsList'
 import { ClearButton } from 'components/happylist/ClearButton'
 import { ListSummary } from 'components/happylist/ListSummary'
-import './happycss/happylist.css'
 
+import styled from 'styled-components/macro'
+import img from 'components/happylist/happyassets/flowerstatue.jpeg'
 
-// Redux is now in App.js
-// const reducer = combineReducers({
-//     list: list.reducer
-// })
+const TextContainer = styled.div`
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-image:url(${img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+`
 
-// const store = configureStore({ reducer })
-
+const HappyBox = styled.section` 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:none;
+    width:95%;
+    border-radius:30px;
+    margin:70px 10px 0;
+`
 export const HappyList = () => {
     return (
-        <container className="happy-list-container">
-            {/* <Provider store={store}> */}
-            <section className="form-box">
+        <TextContainer>
+            <HappyBox>
                 <AddThoughtForm />
                 <ThoughtsList />
                 <ClearButton />
                 <ListSummary />
-            </section>
-            {/* </Provider> */}
-        </container>
+            </HappyBox>
+        </TextContainer>
     )
 }

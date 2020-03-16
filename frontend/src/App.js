@@ -15,6 +15,7 @@ import { Yoga } from './components/Yoga'
 import { Meditation } from './components/Meditation'
 import { Footer } from './components/Footer'
 import { HappyList } from './components/happylist/HappyList'
+
 import './app.css'
 
 const reducer = combineReducers({
@@ -29,7 +30,7 @@ export const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <main className="first-container">
+        <main className="start-container">
           <Navbar />
           <Switch>
             <Route path='/' exact>
