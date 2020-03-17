@@ -2,45 +2,31 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
 import lotus from 'startpage/lotusblack.png'
-// import './css/nav2.css'
+
 
 import styled from 'styled-components/macro'
-
-// const ImgWrapper = styled.div`
-//   display:flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 50%;
-//   padding: 5px;
-//   height: 30px;
-//   width: 30px;
-//   border: 0.5px solid darkgray;
-// `
-// const Flower = styled.img`
-//   width:80%
-// `
 
 const NavWrapper = styled.section`
   position: fixed;
   z-index: 1;
   width: 100%;
   height: ${props => (props.active ? '100%' : '7%')};
-  // top: 0;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   padding: 10px;
   background: ${props => (props.active ? 'rgba(0, 0, 0, 0.8)' : 'none')};  
   @media (min-width: 668px) {
     position: relative;
     background: #f6f2df;
+    padding:0px;
   }
 `
 const BurgerWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  // background: ${props => (props.active ? 'rgba(0, 0, 0, 0.9)' : 'rgba(0, 0, 0, 0.6)')};  
+  align-items: center; 
   width: 46px;
   height: 42px;
   &:focus {
@@ -64,15 +50,16 @@ const NavLinks = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 `
 const NavButton = styled.button`
   font-family: 'Amatic SC';
   letter-spacing: 1.5px;
   font-size: 40px;
-  font-weight: 400;
-  color: #3f4b41;
+  font-weight: bold;
+  color: white;
   height: 40px;
   border: none;
   background: transparent;
@@ -86,11 +73,12 @@ const NavButton = styled.button`
     color: pink;
   }
   @media (min-width: 668px) {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 20px;
+    color: #3f4b41;
   }
   @media (min-width: 992px) {
-    font-size: 18px;
+    font-size: 25px;
+    color:#3f4b41;
   }
 `
 
@@ -122,9 +110,6 @@ export const Navbar = () => {
       </BurgerWrapper>
 
       <NavLinks active={active === true}>
-        {/* <ImgWrapper>
-        <Flower src={lotus} alt="Lotus" />
-      </ImgWrapper> */}
         <Link to={'/home'}>
           <NavButton>Home</NavButton>
         </Link>

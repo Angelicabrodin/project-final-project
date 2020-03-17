@@ -17,7 +17,9 @@ const Input = styled.input`
     height: 35px;
     color: #3f4b41;
     font-family: 'Amatic SC';
+    letter-spacing: 1.5px;
     font-size: 20px;
+    font-weight:bold;
     margin: 7px;
     padding: 3px;
 `
@@ -30,19 +32,33 @@ const SubmitButton = styled.button`
     background-color: white;
     color: #3f4b41;
     font-family: 'Amatic SC';
-    width: 70px;
-    height:35px;
+    letter-spacing: 1.5px;
+    font-weight:bold;
+    font-size:15px;
+    width: 100px;
+    height: 40px;
+    @media (min-width: 668px) {
+        width: 100px;
+        height: 50px;
+        font-size:20px;
+    }
 `
 
 const Headline = styled.h2`
-    color: darkgray;
+    color: #3f4b41;
     font-family: 'Amatic SC';
+    font-weight:bold;
     font-size: 35px;
     margin: 10px 0 10px;
 `
 
 const SubmitText = styled.p`
-
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    letter-spacing: 1.5px;
+    font-weight:bold;
+    font-size: 20px;
+    margin: 10px 0 10px;
 `
 
 const URL = 'https://project-yoga.herokuapp.com/register'

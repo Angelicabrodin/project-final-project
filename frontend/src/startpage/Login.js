@@ -16,12 +16,13 @@ const SigninForm = styled.form`
 const Input = styled.input`
     border: 0.5px solid darkgray;
     border-radius: 5px;
-    /* background-color: #f6f2df; */
+    background-color: white;
     width: 200px;
     height: 35px;
     color: #3f4b41;
     font-family: 'Amatic SC';
     font-size: 20px;
+    font-weight:bold;
     margin:7px;
     padding:3px;
 `
@@ -33,20 +34,28 @@ const SigninButton = styled.button`
     border-radius: 5px;
     background-color: white;
     color: #3f4b41;
+    font-size:15px;
     font-family: 'Amatic SC';
-    width:70px;
-    height:35px;
+    font-weight:bold;
+    width: 100px;
+    height: 40px;
+    @media (min-width: 668px) {
+        width: 100px;
+        height: 50px;
+        font-size:20px;
+    }
 `
 const Headline = styled.h2`
-    color: darkgray;
+    color: #3f4b41;
     font-family: 'Amatic SC';
+    font-weight:bold;
     font-size: 35px;
     margin:10px 0 10px;
 `
 const ErrorText = styled.p`
-    color: darkgray;
+    color: #3f4b41;
     font-family: 'Amatic SC';
-    font-size:20px;
+    font-size:30px;
 `
 
 export const Login = () => {
@@ -73,7 +82,7 @@ export const Login = () => {
             setEmail('')
             setPassword('')
             if (data.notFound) {
-                setErrorMessage('Username or password is invalid')
+                setErrorMessage('Email or password is invalid')
                 // Här kallar vi på action i reducern för att sätta global state till false.
                 dispatch(users.actions.setLoggedIn(false))
             } else {

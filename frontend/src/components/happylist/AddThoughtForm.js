@@ -6,40 +6,53 @@ import styled from 'styled-components/macro'
 const AddToForm = styled.form`
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    margin: 10px;
+    align-items: center;
+    margin: 5px;
     font-size:20px;
     width:auto;
     font-family: 'Amatic SC';
     color:#3f4b41;
+    font-weight:bold;
+    @media (min-width: 668px) {
+        margin: 10px;
+    }
 `
 
 const AddToThoughts = styled.input`
     border: 0.5px solid #3f4b41;
     margin-left: 5px;
     font-family: 'Amatic SC';
-    font-size:20px;
+    font-size:25px;
     color:#3f4b41;
+    font-weight:bold;
 `
 
 const HappyArticle = styled.h5`
     margin: 0px;
     display:inline-block;
     font-size: 25px;
-    color: #3f4b41;
     font-family: 'Amatic SC';
-    font-weight: 100;
     color: #3f4b41;
+    font-weight:bold;
 `
 
 const AddButton = styled.button`
     margin-left: 5px;
     border:0.5px solid #3f4b41;
     background-color: #f6f2df;
-    border-radius: 16px;
+    border-radius: 5px;
+    color:#3f4b41;
     font-family: 'Amatic SC';
     font-size: 15px;
     cursor:pointer;
+    font-weight:bold;
+    @media (min-width: 668px) {
+        width: 75px;
+        margin: 10px;
+    }
+    @media (min-width: 992px) {
+        margin: 10px;
+    }
 `
 
 export const AddThoughtForm = () => {
@@ -54,14 +67,14 @@ export const AddThoughtForm = () => {
     return (
         <AddToForm onSubmit={handleSubmit}>
             <label>
-                <HappyArticle>My Happy Thoughts:</HappyArticle>
+                <HappyArticle>Happy Thoughts:</HappyArticle>
                 <AddToThoughts
                     type="text"
                     value={name}
                     onChange={(event) => setName(event.target.value)} />
             </label>
 
-            <AddButton type="submit">Add Thought</AddButton>
+            <AddButton type="submit">Add</AddButton>
         </AddToForm>
     )
 } 

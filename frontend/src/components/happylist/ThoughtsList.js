@@ -7,9 +7,14 @@ import styled from 'styled-components/macro'
 const Addlist = styled.div` 
     display:flex;
     justify-content: center;
-    margin:10px;
-    color:#3f4b41;
+    margin:5px;
+    color:#2d2d2d;
     font-family: 'Amatic SC';
+    font-weight:bold;
+
+    @media (min-width: 668px) {
+        width:70%;
+    }
 `
 
 const ThoughtUl = styled.ul`
@@ -18,9 +23,18 @@ const ThoughtUl = styled.ul`
     align-items:flex-start;
     padding-left: 30px;
     margin:0px;
-    font-size:20px;
-    color:#3f4b41;
+    font-size:25px;
+    color:#2d2d2d;
     font-family: 'Amatic SC';
+    font-weight:bold;
+
+    @media (min-width: 668px) {
+        margin: 10px
+        font-size:30px;
+    }
+    @media (min-width: 992px) {
+
+    }
 `
 
 export const ThoughtsList = () => {

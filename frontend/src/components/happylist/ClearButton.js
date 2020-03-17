@@ -10,11 +10,16 @@ const StartOver = styled.button`
     align-items: center;
     border: 0.5px solid #3f4b41;
     background-color: #f6f2df;
-    border-radius: 16px;
+    border-radius: 5px;
     font-family: 'Amatic SC';
     color: #3f4b41;
     width: 30%;
     font-size: 20px;
+    font-weight:bold;
+    @media (min-width: 668px) {
+        margin: 10px;
+        width: 150px;
+    }
 `
 
 export const ClearButton = () => {
@@ -23,7 +28,7 @@ export const ClearButton = () => {
     return (
         <StartOver
             type="button" onClick={() => dispatch(list.actions.removeAll())}>
-            Clear All!
+            Clear All
         </StartOver>
     )
 }

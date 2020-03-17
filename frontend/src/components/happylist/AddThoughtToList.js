@@ -7,16 +7,23 @@ const AddMore = styled.label`
     margin-left:5px;
     font-size:15px;
     color:#3f4b41;
+    font-weight:bold;
+    @media (min-width: 668px) {
+    }
+    @media (min-width: 992px) {
+
+    }
 `
 
 const Remove = styled.button`
     margin-left: 10px;
-    border: 0.5px solid  #3f4b41;
+    border: 0.5px solid #3f4b41;
     background-color: #f6f2df;
-    border-radius: 16px;
+    border-radius: 5px;
     font-family: 'Amatic SC';
     font-size:15px;
     color:#3f4b41;
+    font-weight:bold;
 `
 
 export const AddThoughtToList = (props) => {
@@ -44,7 +51,7 @@ export const AddThoughtToList = (props) => {
             <Remove
                 type="button"
                 onClick={handleRemoveButtonClick}>
-                Acchieved!
+                Clear
             </Remove>
         </li>
     )

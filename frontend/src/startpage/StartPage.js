@@ -13,6 +13,9 @@ const StartContainer = styled.div`
     flex-direction: column;
     margin: 70px 25px 25px 25px;
     height: 80vh;
+    @media (min-width: 668px) {
+        margin: 30px 25px 25px 25px; 
+      }
 `
 const StartButton = styled.div`
     border-radius: 5px;
@@ -22,11 +25,18 @@ const StartButton = styled.div`
     background-color: white;
     color: #3f4b41;
     font-family: 'Amatic SC';
+    font-weight:bold;
     font-size: 20px;
     height: 30px;
     width: 120px;
     margin: 15px;
     border:0.5px solid darkgray;
+    @media (min-width: 668px) {
+        height: 40px;
+        width: 130px;
+        margin: 20px;
+        font-size: 30px;
+    }
 `
 
 const Wrapper = styled.div`
@@ -38,6 +48,11 @@ const Wrapper = styled.div`
     height:150px;
     width:150px;
     border:1px solid darkgray;
+    @media (min-width: 992px) {
+        height: 250px;
+        width: 250px;
+    }
+    
 `
 
 const Logo = styled.img`
@@ -66,7 +81,7 @@ export const StartPage = () => {
             {showRegisterForm && !showLoginForm && <Register />}
             {showLoginForm && <Login />}
             {!showRegisterForm && <StartButton type='button' onClick={onRegister}>Register</StartButton>}
-            {!showLoginForm && <StartButton type='button' onClick={onLogin}>Login</StartButton>}
+            {!showLoginForm && <StartButton type='button' onClick={onLogin}>Sign in</StartButton>}
         </StartContainer>
     )
 }
