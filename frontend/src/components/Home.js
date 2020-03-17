@@ -13,21 +13,39 @@ const HomeContainer = styled.div`
 `
 
 const HomeList = styled.div`
-    margin-top:100px;
-    justify-content: center;
-    width:50%;
-    color: #3f4b41;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    // align-items:center;
+    // justify-content:center;
+    width:60%;
+    @media (min-width: 668px) {
+        width: 50%;
+    }
+    @media (min-width: 992px) {
+        
+    }
 `
-const HeadLine = styled.div`
+const HeadLine = styled.h2`
     color: #3f4b41;
     font-family:'Amatic SC';
     font-weight:bold;
-    font-size:30px;
+    font-size:35px;
+
+    @media (min-width: 668px) {
+        margin: 25px 0px; 
+        font-size:45px;
+    }
 `
 const HomeText = styled.p`
     color: #3f4b41;
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
+    font-size:15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    @media (min-width: 668px) {
+        font-size:20px;
+    }
 `
 
 
@@ -37,8 +55,8 @@ export const Home = () => {
             <HomeList>
                 <HeadLine>Welcome to this site</HeadLine>
                 <HomeText>Feel free to browse the pages of this site and I hope you
-                    will find and get inspired by the content it contains, in these
-                    chaotic times it is important to sit down, reflect and look within,
+                    will find and get inspired by the content, sometimes
+                    it is important to sit down, reflect and look within,
                     so I hope you find something that is meaningful for you and your inner health,
                     Namaste!
                 </HomeText>

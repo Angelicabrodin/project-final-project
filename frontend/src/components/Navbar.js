@@ -57,10 +57,10 @@ const NavLinks = styled.nav`
 const NavButton = styled.button`
   font-family: 'Amatic SC';
   letter-spacing: 1.5px;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   color: white;
-  height: 40px;
+  height: 35px;
   border: none;
   background: transparent;
   transition: 0.6s;

@@ -7,7 +7,7 @@ const AddToForm = styled.form`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 5px 0px;
     font-size:20px;
     width:auto;
     font-family: 'Amatic SC';
@@ -22,7 +22,7 @@ const AddToThoughts = styled.input`
     border: 0.5px solid #3f4b41;
     margin-left: 5px;
     font-family: 'Amatic SC';
-    font-size:25px;
+    font-size:20px;
     color:#3f4b41;
     font-weight:bold;
 `
@@ -30,7 +30,7 @@ const AddToThoughts = styled.input`
 const HappyArticle = styled.h5`
     margin: 0px;
     display:inline-block;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Amatic SC';
     color: #3f4b41;
     font-weight:bold;

@@ -13,12 +13,13 @@ const MedContainer = styled.div`
 `
 
 const MedList = styled.div`
-    margin-top: 80px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
-    width:70%;
+    align-items:center;
+    justify-content:center;
+    width:60%;
     @media (min-width: 668px) {
-        margin-top: 0px; 
         width: 50%;
     }
     @media (min-width: 992px) {
@@ -38,23 +39,23 @@ const HeadLine = styled.h2`
     font-family:'Amatic SC';
     font-weight:bold;
     font-size:35px;
-    margin-top:0px;
-    margin-bottom:10px;
+    // margin-top:0px;
+    // margin-bottom:10px;
     @media (min-width: 668px) {
         margin: 25px 0px; 
         font-size:45px;
     }
 `
-const MeditationText = styled.p`
-    color: #3f4b41;
-    font-family: 'Roboto', sans-serif;
-    font-size:15px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    @media (min-width: 668px) {
-        font-size:20px;
-    }
-`
+// const MeditationText = styled.p`
+//     color: #3f4b41;
+//     font-family: 'Roboto', sans-serif;
+//     font-size:15px;
+//     margin-bottom: 10px;
+//     margin-top: 0px;
+//     @media (min-width: 668px) {
+//         font-size:20px;
+//     }
+// `
 const MedLinkBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -80,7 +81,7 @@ const LinkText = styled.p`
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 30px;
-    font-size: 10px;
+    font-size: 15px;
     @media (min-width: 668px) { 
         font-size:20px;
     }
@@ -91,9 +92,9 @@ export const Meditation = () => {
         <MedContainer>
             <MedList>
                 <HeadLine>Meditation sites</HeadLine>
-                <MeditationText>Feel free to browse these pages for different meditation sites, most of them
+                {/* <MeditationText>Feel free to browse these pages for different meditation sites, most of them
                     have a free trial period.
-                </MeditationText>
+                </MeditationText> */}
                 <MedLinkBox>
                     <div>
                         <LinkStyle href={'https://yogobe.com/se/register/account'}>Yogobe</LinkStyle>

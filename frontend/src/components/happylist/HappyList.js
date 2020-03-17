@@ -26,35 +26,33 @@ const HappyBox = styled.section`
     background-color:none;
     width:95%;
     border-radius:30px;
-    margin:70px 10px 0;
+    margin:0px 10px 0;
 
     @media (min-width: 668px) {
         margin:0px;
         width:70%;
-    }
-    @media (min-width: 992px) {
-        margin:0px;
     }
 `
 const Affirmations = styled.h2`
     color: #3f4b41;
     font-family:'Amatic SC';
     font-weight:bold;
-    font-size:30px;
+    font-size:35px;
+    @media (min-width: 668px) {
+        margin: 25px 0px; 
+        font-size:45px;
+    }
 `
 const AffText = styled.p`
     color: #3f4b41;
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
-    margin: 5px 20px 15px;
+    font-size:15px;
+    margin: 5px;
+    width:70%;
 
     @media (min-width: 668px) {
-        width:70%;
         margin: 5px 20px 25px;
-    }
-    @media (min-width: 992px) {
-        width:70%;
-        margin: 5px 20px 25px;
+        font-size:20px;
     }
 `
 
