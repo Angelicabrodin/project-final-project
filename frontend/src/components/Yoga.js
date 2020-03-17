@@ -8,10 +8,11 @@ const YogaContainer = styled.div`
     background-image:url(${img});
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    min-height: 100vh;
+    height: auto;
     width:100%;
     @media (min-width: 668px) {
-        height:auto;
+
     }
 `
 

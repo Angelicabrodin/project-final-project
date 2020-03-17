@@ -15,7 +15,8 @@ const TextContainer = styled.div`
     background-image:url(${img});
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    min-height: 100vh;
+    height: auto;
     width:100%;
 `
 
@@ -38,6 +39,7 @@ const Affirmations = styled.h2`
     font-family:'Amatic SC';
     font-weight:bold;
     font-size:35px;
+    text-align: center;
     @media (min-width: 668px) {
         margin: 25px 0px; 
         font-size:45px;

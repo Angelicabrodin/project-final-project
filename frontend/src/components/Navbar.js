@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
-import lotus from 'startpage/lotusblack.png'
-
 
 import styled from 'styled-components/macro'
 
@@ -81,6 +79,19 @@ const NavButton = styled.button`
     color:#3f4b41;
   }
 `
+// const SignoutButton = styled.button`
+//     padding: 5px;
+//     margin: 6px;
+//     border-radius: 5px;
+//     background-color: white;
+//     color: #3f4b41;
+//     font-weight:bold;
+//     font-size:15px;
+//     font-family: 'Amatic SC';
+//     border: 0.5px solid darkgray;
+//     width: 100px;
+//     height: 40px;
+// `
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
@@ -126,9 +137,13 @@ export const Navbar = () => {
           <NavButton>Happy List</NavButton>
         </Link>
 
-        <Link to={'/'}>
+        <button type='button' onClick={onClick}>
           <NavButton>Logout</NavButton>
-        </Link>
+        </button>
+
+        {/* <SignoutButton type='button' onClick={onClick}>
+          Sign out
+        </SignoutButton> */}
 
       </NavLinks>
     </NavWrapper>

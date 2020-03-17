@@ -23,7 +23,7 @@ const ThoughtUl = styled.ul`
     align-items:flex-start;
     padding-left: 30px;
     margin:0px;
-    font-size:25px;
+    font-size:20px;
     color:#2d2d2d;
     font-family: 'Amatic SC';
     font-weight:bold;
@@ -31,9 +31,6 @@ const ThoughtUl = styled.ul`
     @media (min-width: 668px) {
         margin: 10px
         font-size:30px;
-    }
-    @media (min-width: 992px) {
-
     }
 `
 

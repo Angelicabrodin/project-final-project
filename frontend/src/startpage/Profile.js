@@ -22,10 +22,13 @@ const SignoutButton = styled.button`
     height: 40px;
 `
 
-// const Welcome = styled.h2`
-//     color: darkgray;
-//     font-family: 'Amatic SC';
-// `
+const Welcome = styled.h2`
+    color: #3f4b41;
+    font-family: 'Amatic SC';
+    font-size:30px;
+    font-weight:bold;
+    margin: 20px 0px 0px;
+`
 
 const StyledLink = styled(NavLink)`
     color: #3f4b41;
@@ -39,7 +42,7 @@ const StyledLink = styled(NavLink)`
 export const Profile = ({ onClick }) => {
     const accessToken = window.localStorage.getItem('accessToken')
     // userName är default user
-    const [userName, setUserName] = useState('userName')
+    const [userName, setUserName] = useState('')
 
     useEffect(() => {
         const fetchUserData = () => {
@@ -49,7 +52,10 @@ export const Profile = ({ onClick }) => {
                 headers: { Authorization: accessToken }
             })
                 .then(res => res.json())
-                .then(json => console.log('json', json))
+                .then(json => {
+                    console.log('json', json)
+                    setUserName(json.name)
+                })
                 .catch(err => {
                     console.log('error', err)
                 })
@@ -58,7 +64,7 @@ export const Profile = ({ onClick }) => {
     })
     return (
         <ProfileSection>
-            {/* <Welcome>{`Hello ${userName}`}</Welcome> */}
+            <Welcome>{`Hello ${userName}`}</Welcome>
             <StyledLink to="/home">Welcome Home</StyledLink>
             <SignoutButton type='button' onClick={onClick}>
                 Sign out

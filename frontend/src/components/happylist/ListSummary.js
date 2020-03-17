@@ -28,17 +28,24 @@ const ThoughtsText = styled.h2`
     margin:0px;
     width:auto;
     margin:10px;
-    font-size:25px;
+    font-size:20px;
     color:#3f4b41;
+    text-align:center;
     font-family: 'Amatic SC';
     font-weight:bold;
+    @media (min-width: 668px) { 
+        font-size:40px;
+    }
 `
 
 const OrderedList = styled.ol`
-    padding - left: 10px;
+    padding-left: 10px;
     margin: 0px;
     font-size: 20px;
-    font-weight:700;
+    font-weight:bold;
+    @media (min-width: 668px) { 
+        font-size:40px;
+    }
 `
 const LotusImg = styled.img`
     width:10%;
@@ -56,7 +63,7 @@ export const ListSummary = () => {
         <Summary>
             {/* <MainText>I have {items.length} Happy Thoughts</MainText> */}
             <ThoughtsText>I need to think about {addMoreThoughts.length} Happy Thoughts
-                {addMoreThoughts.length === 1 ? "." : "s."}
+                {/* {addMoreThoughts.length === 1 ? "." : "s."} */}
                 <LotusImg src={blacklotus} alt="Lotus" onClick={() => setShowList(!showList)} />
             </ThoughtsText>
 

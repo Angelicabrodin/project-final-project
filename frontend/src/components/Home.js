@@ -8,7 +8,8 @@ const HomeContainer = styled.div`
     background-image:url(${img});
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    min-height: 100vh;
+    height: auto;
     width:100%;
 `
 

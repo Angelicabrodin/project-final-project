@@ -11,16 +11,18 @@ const StartContainer = styled.div`
     align-items: center;
     justify-center:center;
     flex-direction: column;
-    margin: 70px 25px 25px 25px;
-    height: 80vh;
+    // margin: 70px 25px 25px 25px;
+    min-height: 100vh;
+    height: auto;
     @media (min-width: 668px) {
-        margin: 30px 25px 25px 25px; 
+        // margin: 30px 25px 25px 25px; 
       }
 `
 const StartButton = styled.div`
     border-radius: 5px;
     justify-content:center;
     align-items:center;
+    text-align: center;
     padding: 1px 7px 2px;
     background-color: white;
     color: #3f4b41;
@@ -48,6 +50,7 @@ const Wrapper = styled.div`
     height:150px;
     width:150px;
     border:1px solid darkgray;
+    margin-top:30px;
     @media (min-width: 992px) {
         height: 250px;
         width: 250px;

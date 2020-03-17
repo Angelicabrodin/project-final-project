@@ -9,7 +9,8 @@ const FooterContainer = styled.div`
 `
 
 const Text = styled.p`
-    // font-family: 'Amatic SC';
+    font-family: 'Amatic SC';
+    text-align: center;
     color:#3f4b41;
     font-size: 15px;
     margin: 10px 0;
