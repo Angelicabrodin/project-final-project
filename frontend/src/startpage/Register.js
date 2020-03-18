@@ -52,12 +52,11 @@ const Headline = styled.h2`
     margin: 10px 0 10px;
 `
 
-const SubmitText = styled.p`
+const SubmitText = styled.h2`
     color: #3f4b41;
     font-family: 'Amatic SC';
-    letter-spacing: 1.5px;
     font-weight:bold;
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px 0 10px;
 `
 
@@ -88,7 +87,7 @@ export const Register = (props) => {
     return (
         <>
             <RegisterForm onSubmit={handleSubmit}>
-                <Headline>Register</Headline>
+                <Headline>Sign up</Headline>
                 <label>
                     <Input required
                         type='text'
@@ -110,7 +109,7 @@ export const Register = (props) => {
                 </label>
                 <SubmitButton type='submit'>Submit</SubmitButton>
             </RegisterForm>
-            {registerUser && <SubmitText>Namaste for registering to our Yoga community 🙏 </SubmitText>}
+            {registerUser && <SubmitText>Namaste for signing up to our Yoga community</SubmitText>}
         </>
     )
 }

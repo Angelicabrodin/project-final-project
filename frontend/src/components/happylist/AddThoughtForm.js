@@ -67,7 +67,7 @@ export const AddThoughtForm = () => {
     return (
         <AddToForm onSubmit={handleSubmit}>
             <label>
-                <HappyArticle>Happy Thoughts:</HappyArticle>
+                <HappyArticle>Affirmation:</HappyArticle>
                 <AddToThoughts
                     type="text"
                     value={name}

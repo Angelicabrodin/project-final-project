@@ -39,7 +39,7 @@ export const App = () => {
             <PrivateRoute component={Home} path="/home" exact />
             <PrivateRoute component={Yoga} path="/yoga" exact />
             <PrivateRoute component={Meditation} path="/meditation" exact />
-            <PrivateRoute component={HappyList} path="/happylist" exact />
+            <PrivateRoute component={HappyList} path="/affirmations" exact />
           </Switch>
           <Footer />
         </main>

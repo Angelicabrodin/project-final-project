@@ -83,7 +83,7 @@ export const StartPage = () => {
             </Wrapper>
             {showRegisterForm && !showLoginForm && <Register />}
             {showLoginForm && <Login />}
-            {!showRegisterForm && <StartButton type='button' onClick={onRegister}>Register</StartButton>}
+            {!showRegisterForm && <StartButton type='button' onClick={onRegister}>Sign up</StartButton>}
             {!showLoginForm && <StartButton type='button' onClick={onLogin}>Sign in</StartButton>}
         </StartContainer>
     )

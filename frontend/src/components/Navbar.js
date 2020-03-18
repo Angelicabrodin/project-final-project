@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
 
+// Trying to make the logout button to work with redux
+import { useSelector, useDispatch } from 'react-redux'
+import { users } from 'reducers/users'
+
 import styled from 'styled-components/macro'
 
 const NavWrapper = styled.section`
@@ -79,22 +83,25 @@ const NavButton = styled.button`
     color:#3f4b41;
   }
 `
-// const SignoutButton = styled.button`
-//     padding: 5px;
-//     margin: 6px;
-//     border-radius: 5px;
-//     background-color: white;
-//     color: #3f4b41;
-//     font-weight:bold;
-//     font-size:15px;
-//     font-family: 'Amatic SC';
-//     border: 0.5px solid darkgray;
-//     width: 100px;
-//     height: 40px;
-// `
+const LogOut = styled.button`
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+`
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
+
+  // Everything below is to try and set the logout button
+  // här får vi global state loggedIn från Redux. är true eller false.
+  const loggedIn = useSelector(store => store.users.loggedIn)
+  const dispatch = useDispatch()
+
+  // Här kallar vi på action i reducern för att sätta global state till false.
+  const logOut = () => {
+    window.localStorage.clear()
+    dispatch(users.actions.setLoggedIn(false))
+  }
 
   return (
     <NavWrapper
@@ -133,17 +140,13 @@ export const Navbar = () => {
           <NavButton>Meditation</NavButton>
         </Link>
 
-        <Link to={'/happylist'}>
-          <NavButton>Happy List</NavButton>
+        <Link to={'/affirmations'}>
+          <NavButton>Affirmations</NavButton>
         </Link>
 
-        <button type='button' onClick={onClick}>
+        <LogOut type='button' onClick={logOut}>
           <NavButton>Logout</NavButton>
-        </button>
-
-        {/* <SignoutButton type='button' onClick={onClick}>
-          Sign out
-        </SignoutButton> */}
+        </LogOut>
 
       </NavLinks>
     </NavWrapper>

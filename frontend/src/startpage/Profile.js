@@ -25,7 +25,7 @@ const SignoutButton = styled.button`
 const Welcome = styled.h2`
     color: #3f4b41;
     font-family: 'Amatic SC';
-    font-size:30px;
+    font-size:25px;
     font-weight:bold;
     margin: 20px 0px 0px;
 `
@@ -37,6 +37,10 @@ const StyledLink = styled(NavLink)`
     font-size:30px;
     font-weight:bold;
     margin:10px;
+    transition: 0.6s;
+    &:hover {
+        color: pink;
+    }
 `
 
 export const Profile = ({ onClick }) => {
@@ -64,11 +68,12 @@ export const Profile = ({ onClick }) => {
     })
     return (
         <ProfileSection>
-            <Welcome>{`Hello ${userName}`}</Welcome>
-            <StyledLink to="/home">Welcome Home</StyledLink>
-            <SignoutButton type='button' onClick={onClick}>
+            <Welcome>{`Hello ${userName},`}
+                <StyledLink to="/home">Welcome back!</StyledLink>
+            </Welcome>
+            {/* <SignoutButton type='button' onClick={onClick}>
                 Sign out
-            </SignoutButton>
+            </SignoutButton> */}
         </ProfileSection>
     )
 }

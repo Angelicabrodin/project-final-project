@@ -63,9 +63,10 @@ export const HappyList = () => {
         <TextContainer>
             <HappyBox>
                 <Affirmations>Affirmations</Affirmations>
-                <AffText>This is a place where you can add affirmations and happy thoughts, maybe there is
-                    something in particular you wish to think about, or maybe you should add this to
-                    remember in the future, you do not need to think this right know, just add away.
+                <AffText>Affirmations are used to reprogram the subconscious mind,
+                    to encourage us to believe certain things about ourselves or about the world
+                     and our place within it. They are also used to help us create the reality we
+                     want—often in terms of making (or attracting) wealth, love, beauty, and happiness.
                 </AffText>
                 <AddThoughtForm />
                 <ThoughtsList />

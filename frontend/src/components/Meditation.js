@@ -19,9 +19,9 @@ const MedList = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content:center;
-    width:60%;
+    width:95%;
     @media (min-width: 668px) {
-        width: 50%;
+        width: 70%;
     }
     @media (min-width: 992px) {
         
@@ -40,7 +40,7 @@ const HeadLine = styled.h2`
     font-family:'Amatic SC';
     font-weight:bold;
     font-size:35px;
-    // margin-top:0px;
+    margin-top:10px;
     // margin-bottom:10px;
     @media (min-width: 668px) {
         margin: 25px 0px; 
@@ -59,6 +59,8 @@ const HeadLine = styled.h2`
 // `
 const MedLinkBox = styled.div`
     display: flex;
+    align-items: center;
+    justify-content:center;
     flex-direction: column;
     margin: 0px;
 `
@@ -81,10 +83,27 @@ const LinkText = styled.p`
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 30px;
     font-size: 15px;
+    width:360px;
     @media (min-width: 668px) { 
+        width:460px;
         font-size:20px;
+    }
+    @media (min-width: 992px) { 
+        width:560px;
+        font-size:25px;
+    }
+`
+const Video = styled.iframe`
+    border: 0.5px solid #3f4b41;
+    border-radius:5px;
+    @media (min-width: 668px) { 
+        width:460px;
+        height:220px;
+    }
+    @media (min-width: 992px) { 
+        width:560px;
+        height:315px;
     }
 `
 
@@ -98,6 +117,39 @@ export const Meditation = () => {
                 </MeditationText> */}
                 <MedLinkBox>
                     <div>
+                        <LinkText>Relaxing Music for Stress Relief. Calm Celtic Music for Meditation, Healing Therapy, Sleep, Yoga</LinkText>
+                        <Video
+                            width="360"
+                            height="200"
+                            src="https://www.youtube.com/embed/6xDyPcJrl0c"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </Video>
+                    </div>
+                    <div>
+                        <LinkText>Deep Healing Energy | 528Hz Ancient Frequency | Sound Healing Session | Zen Meditation</LinkText>
+                        <Video
+                            width="360"
+                            height="200"
+                            src="https://www.youtube.com/embed/go99WqXWGgk"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </Video>
+                    </div>
+                    <div>
+                        <LinkText>Lord of the Rings Music & Ambience | The Shire, A Peaceful Night in Bag End - Relaxing Evening Rain</LinkText>
+                        <Video
+                            width="360"
+                            height="200"
+                            src="https://www.youtube.com/embed/bgIBFEtJQv4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </Video>
+                    </div>
+                    {/* <div>
                         <LinkStyle href={'https://yogobe.com/se/register/account'}>Yogobe</LinkStyle>
                         <LinkText>Welcome to Yogobe – the largest community and video streaming service within yoga and health in Scandinavia!</LinkText>
                     </div>
@@ -112,7 +164,7 @@ export const Meditation = () => {
                     <div>
                         <LinkStyle href={'https://www.yogaanytime.com/px/p-home-7?ref=ga&gclid=Cj0KCQjw6sHzBRCbARIsAF8FMpXj53HLR3P4dqPf85d0i-YKne4a-2UlzHOj7wfaOtYVIwGNUfFEDbYaAkEVEALw_wcB'}>YogaAnytime</LinkStyle>
                         <LinkText>Practice Yoga online, anytime, 2,600+ yoga and meditation videos in your home and on the go</LinkText>
-                    </div>
+                    </div> */}
                 </MedLinkBox>
             </MedList>
         </MedContainer>
