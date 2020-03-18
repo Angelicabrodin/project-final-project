@@ -19,9 +19,9 @@ const HomeList = styled.div`
     flex-direction: column;
     // align-items:center;
     // justify-content:center;
-    width:60%;
+    width:70%;
     @media (min-width: 668px) {
-        width: 50%;
+        width: 60%;
     }
     @media (min-width: 992px) {
         

@@ -91,7 +91,6 @@ const LinkText = styled.p`
     }
     @media (min-width: 992px) { 
         width:560px;
-        font-size:25px;
     }
 `
 const Video = styled.iframe`

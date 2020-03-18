@@ -41,7 +41,7 @@ export const AddThoughtToList = (props) => {
         <li>
             {props.item.name}
             <AddMore>
-                Remember!
+                Remember
                 <input
                     type="checkbox"
                     checked={props.item.needsMore}
