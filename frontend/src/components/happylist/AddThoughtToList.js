@@ -8,11 +8,6 @@ const AddMore = styled.label`
     font-size:15px;
     color:#3f4b41;
     font-weight:bold;
-    @media (min-width: 668px) {
-    }
-    @media (min-width: 992px) {
-
-    }
 `
 
 const Remove = styled.button`

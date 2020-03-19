@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Register } from 'startpage/Register'
 import { Login } from 'startpage/Login'
 import lotus from './lotusblack.png'
-import { Link } from 'react-router-dom'
 
 import styled from 'styled-components/macro'
 
@@ -11,12 +10,8 @@ const StartContainer = styled.div`
     align-items: center;
     justify-center:center;
     flex-direction: column;
-    // margin: 70px 25px 25px 25px;
     min-height: 100vh;
     height: auto;
-    @media (min-width: 668px) {
-        // margin: 30px 25px 25px 25px; 
-      }
 `
 const StartButton = styled.div`
     border-radius: 5px;

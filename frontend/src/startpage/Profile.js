@@ -7,21 +7,6 @@ const ProfileSection = styled.section`
     align-items: center;
     flex-direction: column;
 `
-
-const SignoutButton = styled.button`
-    padding: 5px;
-    margin: 6px;
-    border-radius: 5px;
-    background-color: white;
-    color: #3f4b41;
-    font-weight:bold;
-    font-size:15px;
-    font-family: 'Amatic SC';
-    border: 0.5px solid darkgray;
-    width: 100px;
-    height: 40px;
-`
-
 const Welcome = styled.h2`
     color: #3f4b41;
     font-family: 'Amatic SC';
@@ -45,7 +30,6 @@ const StyledLink = styled(NavLink)`
 
 export const Profile = ({ onClick }) => {
     const accessToken = window.localStorage.getItem('accessToken')
-    // userName är default user
     const [userName, setUserName] = useState('')
 
     useEffect(() => {
@@ -71,9 +55,6 @@ export const Profile = ({ onClick }) => {
             <Welcome>{`Hello ${userName},`}
                 <StyledLink to="/home">Welcome to NoStressYoga</StyledLink>
             </Welcome>
-            {/* <SignoutButton type='button' onClick={onClick}>
-                Sign out
-            </SignoutButton> */}
         </ProfileSection>
     )
 }

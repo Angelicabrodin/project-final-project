@@ -70,24 +70,17 @@ const Wrapper = styled.div`
 const LotusImg = styled.img`
     width:80%;
 `
-// const LotusImg = styled.img`
-//     width:10%;
-//     margin-left: 15px;
-// `
-
 
 export const ListSummary = () => {
     const items = useSelector(state => state.list.items)
     const addMoreThoughts = items.filter(item => item.needsMore === true)
-
     const [showList, setShowList] = useState(false)
 
     return (
         <Summary>
-            {/* <MainText>I have {items.length} Happy Thoughts</MainText> */}
-            <ThoughtsText>I need to think about {addMoreThoughts.length} Happy Thoughts
-                {/* {addMoreThoughts.length === 1 ? "." : "s."} */}
-                <Wrapper><LotusImg src={lotus} alt="Lotus" onClick={() => setShowList(!showList)} />
+            <ThoughtsText>Press the icon and repeat after me...
+                <Wrapper onClick={() => setShowList(!showList)}>
+                    <LotusImg src={lotus} alt="Lotus" />
                 </Wrapper>
             </ThoughtsText>
 

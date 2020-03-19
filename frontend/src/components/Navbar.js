@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
 
-// Trying to make the logout button to work with redux
 import { useSelector, useDispatch } from 'react-redux'
 import { users } from 'reducers/users'
 
@@ -81,21 +80,15 @@ const NavButton = styled.button`
     color:#3f4b41;
   }
 `
-// const LogOut = styled.button`
-//   background-color: transparent;
-//   border: none;
-//   text-decoration: none;
-// `
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
 
-  // Everything below is to try and set the logout button
-  // här får vi global state loggedIn från Redux. är true eller false.
+  // Global state loggedIn from Redux. True/false
   const loggedIn = useSelector(store => store.users.loggedIn)
   const dispatch = useDispatch()
 
-  // Här kallar vi på action i reducern för att sätta global state till false.
+  // Calling to action in the reducer to set global state to false
   const logOut = () => {
     window.localStorage.clear()
     dispatch(users.actions.setLoggedIn(false))
@@ -143,10 +136,9 @@ export const Navbar = () => {
           <NavButton>Affirmations</NavButton>
         </Link>
 
-        {/* <LogOut type='button' onClick={logOut}> */}
         <NavButton type='button' onClick={logOut}>
-          Logout</NavButton>
-        {/* </LogOut> */}
+          Logout
+        </NavButton>
 
       </NavLinks>
     </NavWrapper>

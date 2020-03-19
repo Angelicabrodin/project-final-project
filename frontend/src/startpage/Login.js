@@ -63,7 +63,7 @@ export const Login = () => {
     const [password, setPassword] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
     const URL = 'https://project-yoga.herokuapp.com/login'
-    // här får vi global state loggedIn från Redux. är true eller false.
+    // Global state loggedIn from Redux, either true/false
     const loggedIn = useSelector(store => store.users.loggedIn)
     const dispatch = useDispatch()
 
@@ -83,25 +83,24 @@ export const Login = () => {
             setPassword('')
             if (data.notFound) {
                 setErrorMessage('Email or password is invalid')
-                // Här kallar vi på action i reducern för att sätta global state till false.
+                // Calling to action in the reducer to set global state to false
                 dispatch(users.actions.setLoggedIn(false))
             } else {
                 window.localStorage.setItem('accessToken', data.accessToken)
                 setErrorMessage('')
-                // Här kallar vi på action i reducern för att sätta global state till true.
+                // Calling to action in the reducer to set global state to true
                 dispatch(users.actions.setLoggedIn(true))
             }
         })
     }
-    // den här logout funktionen är passad ner som en prop till Profile componenten, den visas under Hello user.
+    // This logout function is passed down as a prop to the Profile component, as shown in Hello userName
     const logOut = () => {
         window.localStorage.clear()
-        dispatch(users.actions.setLoggedIn(false)) // Här kallar vi på action i reducern för att sätta global state till false.
+        dispatch(users.actions.setLoggedIn(false))
     }
     return (
         <>
             {loggedIn && (
-                // Profile component är den som visas när du är inloggad.
                 <Profile onClick={logOut} />
             )}
             {errorMessage && <ErrorText>{errorMessage}</ErrorText>}

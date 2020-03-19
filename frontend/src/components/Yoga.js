@@ -11,9 +11,6 @@ const YogaContainer = styled.div`
     min-height: 100vh;
     height: auto;
     width:100%;
-    @media (min-width: 668px) {
-
-    }
 `
 const YogaList = styled.div`
     margin-top: 0px;
@@ -24,9 +21,6 @@ const YogaList = styled.div`
     width:95%;
     @media (min-width: 668px) {
         width: 70%;
-    }
-    @media (min-width: 992px) {
-        
     }
 `
 const YogaLinkBox = styled.div`
@@ -71,7 +65,6 @@ const HeadLine = styled.h2`
     font-family:'Amatic SC';
     font-weight:bold;
     font-size:35px;
-
     @media (min-width: 668px) {
         margin: 25px 0px; 
         font-size:45px;
@@ -113,7 +106,7 @@ export const Yoga = () => {
             <YogaList>
                 <HeadLine>Yoga sites</HeadLine>
                 <YogaText>Here you can find different sites that offers online<br></br> yoga classes, most of them
-                    offers a free trial period.<br></br> Hope you find specifically your favourite!
+                    offers a free trial period.<br></br> Hope you find your special favourite!
                 </YogaText>
                 <YogaLinkBox>
                     <div>

@@ -28,7 +28,6 @@ const HappyBox = styled.section`
     width:95%;
     border-radius:30px;
     margin:0px 10px 0;
-
     @media (min-width: 668px) {
         margin:0px;
         width:70%;
@@ -50,11 +49,11 @@ const AffText = styled.p`
     font-family: 'Roboto', sans-serif;
     font-size:15px;
     margin: 5px;
-    width:70%;
-
+    width:90%;
     @media (min-width: 668px) {
         margin: 5px 20px 25px;
         font-size:20px;
+        width:80&
     }
 `
 
@@ -63,19 +62,11 @@ export const HappyList = () => {
         <TextContainer>
             <HappyBox>
                 <Affirmations>Affirmations</Affirmations>
-                <AffText>Affirmations are used to reprogram the subconscious mind,
-                    to encourage us to believe certain things about ourselves or about the world
-                     and our place within it. They are also used to help us create the reality we
-                     want—often in terms of making (or attracting) wealth, love, beauty, and happiness.
-
-                    {/* Whatever the case, to attract positivity in your life, you need to believe in it! 
-                    And this collection of powerful positive affirmations will offer you the motivation,
-                    drive, and energy you need to attract love, money, and success abundance that will
-                    change your life once and for all!  
-                    
-                    Repeat After Me… here is some affirmations to Inspire You.
-
-                    */}
+                <AffText>Whatever the purpose you have to achieve something in your life, you need to believe in it!
+                Affirmations have been said powerful when it comes to attract whatever you dream
+                about in your life. So whether it is about finding the courage to start a new career,
+                obtain better self confidence or to think more positive, affirmations is a good way to start.
+                Feel free to use one of mine or create your own.
                 </AffText>
                 <AddThoughtForm />
                 <ThoughtsList />

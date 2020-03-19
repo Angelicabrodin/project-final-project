@@ -26,9 +26,6 @@ const HomeList = styled.div`
     @media (min-width: 668px) {
         width: 60%;
     }
-    @media (min-width: 992px) {
-        
-    }
 `
 const HeadLine = styled.h2`
     color: #3f4b41;
@@ -51,22 +48,6 @@ const HomeText = styled.p`
         font-size:20px;
     }
 `
-// const EndText = styled.p`
-//     color: #3f4b41;
-//     font-family: 'Roboto', sans-serif;
-//     font-size:15px;
-//     margin-bottom: 10px;
-//     margin-top: 0px;
-//     align-self: center;
-//     @media (min-width: 668px) {
-//         font-size:20px;
-//     }
-// `
-// const LotusImg = styled.img`
-//     width:10%;
-//     margin-left: 15px;
-// `
-
 const Wrapper = styled.div`
     display:flex;
     justify-content: center;
@@ -97,13 +78,13 @@ export const Home = () => {
             <HomeList>
                 <HeadLine>Welcome to NoStressYoga</HeadLine>
                 <HomeText><b>Today</b>, more than ever, people are struggling with mental health, fear, pressure and stress.
-                    I am in no way immune to this, but I have found a way that helps me cope with all these feelings,
-                    practicing Yoga and meditation. That is why I have started this community, nostressyoga, to share all my
-                    favourite sites for yoga and meditation.</HomeText>
+                        I am in no way immune to this, but I have found a way that helps me cope with all these feelings,
+                        practicing Yoga and meditation. That is why I have started this community, nostressyoga, to share all my
+                        favourite sites for yoga and meditation.</HomeText>
                 <HomeText>So please feel free to browse the pages of this site and
-                    I hope you will find and get inspired by the content.</HomeText>
+                        I hope you will find and get inspired by the content.</HomeText>
                 <HomeText>Sometimes it is important to sit down, reflect and look within, so I hope you find something
-                that is meaningful for you and your inner health, Namaste!
+                        that is meaningful for you and your inner health, Namaste!
                 </HomeText>
                 <HomeText>
                     Peace & Love Angie

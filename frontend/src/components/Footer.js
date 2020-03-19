@@ -19,7 +19,7 @@ const Text = styled.p`
 export const Footer = () => {
     return (
         <FooterContainer>
-            <Text>@ Angelica Brodin 2020 Technigo Bootcamp</Text>
+            <Text>@ Angelica Brodin | Technigo Bootcamp 2020 | Final Project</Text>
         </FooterContainer>
     )
 }

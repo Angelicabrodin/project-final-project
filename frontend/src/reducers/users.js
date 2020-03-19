@@ -6,9 +6,9 @@ export const users = createSlice({
     name: 'users',
     initialState,
     reducers: {
+        // The action.payload is either true/false depending on the current login component
         setLoggedIn: (state, action) => {
             state.loggedIn = action.payload
-            // action.payload är antingen true eller false beroende på vad som händer i login componenten.
         }
     }
 })
