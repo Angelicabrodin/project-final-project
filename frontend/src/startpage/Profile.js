@@ -7,6 +7,7 @@ const ProfileSection = styled.section`
     align-items: center;
     flex-direction: column;
 `
+
 const Welcome = styled.h2`
     color: #3f4b41;
     font-family: 'Amatic SC';
@@ -52,9 +53,8 @@ export const Profile = ({ onClick }) => {
     })
     return (
         <ProfileSection>
-            <Welcome>{`Hello ${userName},`}
-                <StyledLink to="/home">Welcome to NoStressYoga</StyledLink>
-            </Welcome>
+            <Welcome>{`Hello ${userName},`}</Welcome>
+            <StyledLink to="/home">Welcome to NoStressYoga</StyledLink>
         </ProfileSection>
     )
 }
