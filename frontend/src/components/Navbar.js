@@ -69,7 +69,7 @@ const NavButton = styled.button`
   cursor: pointer;
   &:focus {
     outline-color: #3f4b41;
-    outline-offset: 3px;
+    outline-offset: 1px;
   }
   &:hover {
     color: pink;

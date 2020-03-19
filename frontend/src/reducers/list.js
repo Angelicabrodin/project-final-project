@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     items: [
-        { id: 1, name: 'I am happy ', needsMore: true },
-        { id: 2, name: 'I am strong ', needsMore: false },
-        { id: 3, name: 'I am kind to myself', needsMore: false }
+        { id: 1, name: 'I have the power to create change', needsMore: true },
+        { id: 2, name: 'I accept myself for who I truly am', needsMore: false },
+        { id: 3, name: 'I am enough', needsMore: false }
     ]
 }
 

@@ -58,6 +58,7 @@ const SubmitText = styled.h2`
     font-weight:bold;
     font-size: 30px;
     margin: 10px 0 10px;
+    text-align:center;
 `
 
 const URL = 'https://project-yoga.herokuapp.com/register'
@@ -109,7 +110,7 @@ export const Register = (props) => {
                 </label>
                 <SubmitButton type='submit'>Submit</SubmitButton>
             </RegisterForm>
-            {registerUser && <SubmitText>Namaste for signing up to our Yoga community</SubmitText>}
+            {registerUser && <SubmitText>Namaste for signing up, now it's time to sign in!</SubmitText>}
         </>
     )
 }

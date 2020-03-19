@@ -69,7 +69,7 @@ export const Profile = ({ onClick }) => {
     return (
         <ProfileSection>
             <Welcome>{`Hello ${userName},`}
-                <StyledLink to="/home">Welcome back!</StyledLink>
+                <StyledLink to="/home">Welcome to NoStressYoga</StyledLink>
             </Welcome>
             {/* <SignoutButton type='button' onClick={onClick}>
                 Sign out
