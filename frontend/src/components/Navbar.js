@@ -81,11 +81,11 @@ const NavButton = styled.button`
     color:#3f4b41;
   }
 `
-const LogOut = styled.button`
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-`
+// const LogOut = styled.button`
+//   background-color: transparent;
+//   border: none;
+//   text-decoration: none;
+// `
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
@@ -143,9 +143,10 @@ export const Navbar = () => {
           <NavButton>Affirmations</NavButton>
         </Link>
 
-        <LogOut type='button' onClick={logOut}>
-          <NavButton>Logout</NavButton>
-        </LogOut>
+        {/* <LogOut type='button' onClick={logOut}> */}
+        <NavButton type='button' onClick={logOut}>
+          Logout</NavButton>
+        {/* </LogOut> */}
 
       </NavLinks>
     </NavWrapper>
