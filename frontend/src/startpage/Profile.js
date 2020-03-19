@@ -53,7 +53,7 @@ export const Profile = ({ onClick }) => {
     })
     return (
         <ProfileSection>
-            <Welcome>{`Hello ${userName},`}</Welcome>
+            <Welcome>{`Hello ${userName}`}</Welcome>
             <StyledLink to="/home">Welcome to NoStressYoga</StyledLink>
         </ProfileSection>
     )
