@@ -42,11 +42,10 @@ const BurgerWrapper = styled.div`
 const NavLinks = styled.nav`
   display: ${props => (props.active ? 'flex' : 'none')};
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 99%;
   height: 80%;
-  padding-top: 50px;
   @media (min-width: 668px) {
     background: none;
     display: flex;
@@ -62,7 +61,6 @@ const NavButton = styled.button`
   font-size: 35px;
   font-weight: bold;
   color: white;
-  height: 35px;
   border: none;
   background: transparent;
   transition: 0.6s;
@@ -128,19 +126,20 @@ export const Navbar = () => {
       </BurgerWrapper>
 
       <NavLinks active={active === true}>
-        <Link to={'/home'}>
+        <Link onClick={() => setActive(!active)} to={'/home'}>
           <NavButton>Home</NavButton>
         </Link>
 
-        <Link to={'/yoga'}>
-          <NavButton>Yoga</NavButton>
+        <Link onClick={() => setActive(!active)} to={'/yoga'}>
+          <NavButton >Yoga</NavButton>
         </Link>
 
-        <Link to={'/meditation'}>
+
+        <Link onClick={() => setActive(!active)} to={'/meditation'}>
           <NavButton>Meditation</NavButton>
         </Link>
 
-        <Link to={'/affirmations'}>
+        <Link onClick={() => setActive(!active)} to={'/affirmations'}>
           <NavButton>Affirmations</NavButton>
         </Link>
 

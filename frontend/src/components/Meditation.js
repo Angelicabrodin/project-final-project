@@ -47,16 +47,22 @@ const HeadLine = styled.h2`
         font-size:45px;
     }
 `
-// const MeditationText = styled.p`
-//     color: #3f4b41;
-//     font-family: 'Roboto', sans-serif;
-//     font-size:15px;
-//     margin-bottom: 10px;
-//     margin-top: 0px;
-//     @media (min-width: 668px) {
-//         font-size:20px;
-//     }
-// `
+const MeditationText = styled.p`
+    color: #3f4b41;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width:360px;
+    @media (min-width: 668px) {
+        width:460px;
+        font-size:20px;
+    }
+    @media (min-width: 992px) {
+        width:560px;
+        font-size:20px;
+    }
+`
 const MedLinkBox = styled.div`
     display: flex;
     align-items: center;
@@ -83,11 +89,11 @@ const LinkText = styled.p`
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 10px;
     width:360px;
     @media (min-width: 668px) { 
         width:460px;
-        font-size:20px;
+        font-size:15px;
     }
     @media (min-width: 992px) { 
         width:560px;
@@ -111,9 +117,9 @@ export const Meditation = () => {
         <MedContainer>
             <MedList>
                 <HeadLine>Meditation sites</HeadLine>
-                {/* <MeditationText>Feel free to browse these pages for different meditation sites, most of them
-                    have a free trial period.
-                </MeditationText> */}
+                <MeditationText>Here you can find different meditation videos,
+                    press play,<br></br> sit back and relax.
+                </MeditationText>
                 <MedLinkBox>
                     <div>
                         <LinkText>Relaxing Music for Stress Relief. Calm Celtic Music for Meditation, Healing Therapy, Sleep, Yoga</LinkText>
@@ -138,11 +144,11 @@ export const Meditation = () => {
                         </Video>
                     </div>
                     <div>
-                        <LinkText>Lord of the Rings Music & Ambience | The Shire, A Peaceful Night in Bag End - Relaxing Evening Rain</LinkText>
+                        <LinkText>Rain Sound and Thunder - 2 Hours Sleep Meditation Sound</LinkText>
                         <Video
                             width="360"
                             height="200"
-                            src="https://www.youtube.com/embed/bgIBFEtJQv4"
+                            src="https://www.youtube.com/embed/Fm0sToWtatw"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>

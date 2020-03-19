@@ -55,11 +55,11 @@ const LinkText = styled.p`
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 10px;
     width:360px;
     @media (min-width: 668px) { 
         width:460px;
-        font-size:20px;
+        font-size:15px;
     }
     @media (min-width: 992px) { 
         width:560px;
@@ -90,25 +90,31 @@ const Video = styled.iframe`
     }
 `
 
-// const YogaText = styled.p`
-//     color: #3f4b41;
-//     font-family: 'Roboto', sans-serif;
-//     font-size:15px;
-//     margin-bottom: 10px;
-//     margin-top: 0px;
-//     @media (min-width: 668px) {
-//         font-size:20px;
-//     }
-// `
+const YogaText = styled.p`
+    color: #3f4b41;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width:360px;
+    @media (min-width: 668px) {
+        width:460px;
+        font-size:20px;
+    }
+    @media (min-width: 992px) {
+        width:560px;
+        font-size:20px;
+    }
+`
 
 export const Yoga = () => {
     return (
         <YogaContainer>
             <YogaList>
                 <HeadLine>Yoga sites</HeadLine>
-                {/* <YogaText>Feel free to browse these pages for different yoga sites, most of them
-                    have a free trial period.
-                </YogaText> */}
+                <YogaText>Here you can find different sites that offers online<br></br> yoga classes, most of them
+                    offers a free trial period.<br></br> Hope you find specifically your favourite!
+                </YogaText>
                 <YogaLinkBox>
                     <div>
                         <StyledLink href={'https://yogobe.com/se/register/account'}>Yogobe</StyledLink>

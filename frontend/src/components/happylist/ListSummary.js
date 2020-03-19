@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { list } from 'reducers/list'
 import styled from 'styled-components/macro'
-import blacklotus from 'components/happylist/lotusblackhappy.png'
 import lotus from 'components/assets/lotus.png'
 
 const Summary = styled.div`

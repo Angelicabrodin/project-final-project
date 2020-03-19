@@ -67,6 +67,15 @@ export const HappyList = () => {
                     to encourage us to believe certain things about ourselves or about the world
                      and our place within it. They are also used to help us create the reality we
                      want—often in terms of making (or attracting) wealth, love, beauty, and happiness.
+
+                    {/* Whatever the case, to attract positivity in your life, you need to believe in it! 
+                    And this collection of powerful positive affirmations will offer you the motivation,
+                    drive, and energy you need to attract love, money, and success abundance that will
+                    change your life once and for all!  
+                    
+                    Repeat After Me… here is some affirmations to Inspire You.
+
+                    */}
                 </AffText>
                 <AddThoughtForm />
                 <ThoughtsList />
