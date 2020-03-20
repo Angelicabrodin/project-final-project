@@ -112,7 +112,7 @@ export const Meditation = () => {
     return (
         <MedContainer>
             <MedList>
-                <HeadLine>Meditation sites</HeadLine>
+                <HeadLine>Meditation Videos</HeadLine>
                 <MeditationText>Here you can find different meditation videos,
                             press play,<br></br> sit back and relax.
                 </MeditationText>
